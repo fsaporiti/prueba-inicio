@@ -1,3 +1,124 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+header{
+    border: 2px red dashed;
+    background-color: #EAC926;
+    padding: 10px;
+    
+}
+
 .logoml {
+    width: 200px;
     max-width: 1000px;
 }
+
+main {
+    width: 90%;
+    border: 2px blue dotted;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+   
+    }
+
+h3 {
+    font-size: 24px;
+}
+
+section img {
+    width: 50vw;
+    height: 52vw;
+    max-width: 185px;
+    max-height: 190px;
+    padding: 5px;
+}
+
+.descripcion,
+.barranavegar {
+    display: none;
+}
+
+section p {
+    font-size: 16px;
+}
+
+.precios {
+    font-size: 18px;
+    line-height: 1px;
+}
+
+section nav {
+    padding-top: 10px;
+    border-top: 1px solid #ebebeb;
+}
+
+nav p {
+    text-align: left;
+}
+
+.cafetera-oferta,
+.macbook-oferta,
+.celular-oferta,
+.tv-oferta {
+    border: 15px solid #ebebeb;
+}
+
+
+footer {
+    border: 2px violet dashed;
+    padding: 10px;
+    text-align: center;
+   
+    
+}
+
+footer h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 480px){
+
+    .barranavegar {
+        display: block;
+    }
+
+    *   {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        }
+    
+    .descripcion{
+        display: block;
+    }
+
+    
+}
+
+@media (min-width: 768px){
+   
+
+/*
+@media (min-width: 992px){
+
+    section img {
+        max-width: 250px;
+        max-height: 255px;
+    }
+}
+@media (min-width: 1200px){
+
+    section img {
+        max-width: 250px;
+        max-height: 255px;
+    }
+}
+*/
