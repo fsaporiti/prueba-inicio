@@ -3,16 +3,60 @@
     box-sizing: border-box;
 }
 
-header{
+.main-header{
     border: 2px red dashed;
     background-color: #EAC926;
-    padding: 10px;
-    
+    padding: 20px;
 }
 
-.logoml {
-    width: 200px;
+.top-header {
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.first-line{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 45%;
     max-width: 1000px;
+}
+
+.buscador {
+    width: 80%;
+    border-radius: 8%;
+    align-self: flex-end;
+}
+
+.fa-magnifying-glass {
+    background-color: white;
+    padding: 2px;
+    display: block;
+    color: gray;
+    text-align: center;
+    border-radius: 12%;
+}
+
+.header-right{
+    font-weight: 400;
+    text-align: center;
+    font-size: 19px;
+}
+
+.hamb-button{
+    background-color: #03264C;
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0px;
+    border-radius: 10%;
+    text-align: center;
+    font-size: 22px;
+    margin: auto;
 }
 
 main {
@@ -21,16 +65,23 @@ main {
     text-align: center;
     padding: 10px;
     margin: auto;
-   
     }
+
+.fa-truck {
+    color: #39b54a;
+    border: solid 2px #39b54a;
+    border-radius: 50%;
+    font-size: 17px;
+    padding: 3px;
+}
 
 h3 {
     font-size: 24px;
 }
 
 section img {
-    width: 50vw;
-    height: 52vw;
+    width: 65vw;
+    height: 67vw;
     max-width: 185px;
     max-height: 190px;
     padding: 5px;
@@ -55,6 +106,10 @@ section nav {
     border-top: 1px solid #ebebeb;
 }
 
+.prueba {
+    border: 1px solid salmon;
+}
+
 nav p {
     text-align: left;
 }
@@ -62,17 +117,21 @@ nav p {
 .cafetera-oferta,
 .macbook-oferta,
 .celular-oferta,
-.tv-oferta {
+.tv-oferta,
+.titulo-ofertas {
     border: 15px solid #ebebeb;
-}
+    }
 
+
+.titulo-ofertas {
+    background-color:  #ebebeb;
+    margin: 0%;
+   }
 
 footer {
     border: 2px violet dashed;
     padding: 10px;
-    text-align: center;
-   
-    
+    text-align: center;     
 }
 
 footer h4 {
@@ -86,25 +145,109 @@ footer p {
     margin-bottom: 10px;
 }
 
+.ocultando1,
+.ocultando2 {
+    display: none;
+}
+
 @media (min-width: 480px){
 
-    .barranavegar {
-        display: block;
+
+    .top-header {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
     }
 
-    *   {
+    .first-line{
+        margin: 0% 10px;
+    }
+
+    .header-right{
+        font-size: 17px;
+    }
+
+    .cafetera-oferta,
+    .macbook-oferta,
+    .celular-oferta,
+    .tv-oferta,
+    .titulo-ofertas {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        border: none;
+        padding: 15px 0;
+        margin: 10px 0;
         }
     
     .descripcion{
         display: block;
+        text-align: center;
+    }
+
+    .ocultando1 {
+        display: block;
     }
 
     
+
+    .precios {
+        text-align: center;
+        font-style: none;
+    }
+
+    .ultima-visita span,
+    .ofertas123 span {
+        color: #39b54a;
+    }
+     
 }
 
 @media (min-width: 768px){
-   
+    
+    .top-header{
+       justify-content: center;
+       justify-items: center;
+    }
+    
+   .header-right{
+        display: flex;
+        max-width: 350px;
+        text-align: right;
+        font-size: 18px;
+        justify-content: right;     
+    }
+
+    .barra-busqueda{
+       width: 320px;
+    }
+
+    .ocultando2 {
+        display: block;
+    }
+
+    .barranavegar {
+        display: flex;
+        text-decoration: none;
+        color: #222222;
+        padding: 10px 0;
+        font-size: 17px;
+        justify-content: space-between;
+    }
+
+    .barranavegar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0%;
+        display: flex;
+    }
+
+    .barranavegar li {
+        margin: 0 2px;
+    }
+
+    .hamb-button{
+        display: none;
+    }
+
 }
 
 /*
@@ -115,11 +258,43 @@ footer p {
         max-height: 255px;
     }
 }
+*/
+
 @media (min-width: 1200px){
+
+    .top-header, .barranavegar {
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    .top-header {
+        align-items: center;
+    }
+
+    .logo {
+        width: 240px;
+    }
+   
+    .header-right{
+        max-width: 600px;
+        font-size: 21px;
+        margin: 0%;
+    }
+
+    .barranavegar {
+        margin-top: 12px;
+    }
+
+    .barranavegar li {
+        margin: 0 10px;
+    }
+
+    .barranavegar a {
+       font-size: 18px;
+    }
 
     section img {
         max-width: 250px;
         max-height: 255px;
     }
 }
-*/
