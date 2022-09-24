@@ -3,14 +3,21 @@
     box-sizing: border-box;
 }
 
+body{
+    margin: 0;
+}
+
 .main-header{
     border: 2px red dashed;
     background-color: #EAC926;
     padding: 20px;
 }
 
+.barra-busqueda i{
+    background-color: #EAC926
+}
+
 .top-header {
-    
     display: flex;
     flex-wrap: wrap;
 }
@@ -22,14 +29,14 @@
 }
 
 .logo {
-    width: 45%;
+    width: 55%;
     max-width: 1000px;
 }
 
 .buscador {
-    width: 80%;
-    border-radius: 8%;
-    align-self: flex-end;
+    width: 70%;
+    border-radius: 0.4em;
+    margin-left: 10px;
 }
 
 .fa-magnifying-glass {
@@ -59,13 +66,10 @@
     margin: auto;
 }
 
-main {
-    width: 90%;
+.mainn {
     border: 2px blue dotted;
     text-align: center;
-    padding: 10px;
-    margin: auto;
-    }
+}
 
 .fa-truck {
     color: #39b54a;
@@ -79,11 +83,15 @@ h3 {
     font-size: 24px;
 }
 
+.ofertas123{
+    background-color: #ebebeb;
+}
+
 section img {
     width: 65vw;
     height: 67vw;
-    max-width: 185px;
-    max-height: 190px;
+    max-width: 215px;
+    max-height: 220px;
     padding: 5px;
 }
 
@@ -114,6 +122,11 @@ nav p {
     text-align: left;
 }
 
+
+.img-banner {
+    width: 100%;
+}
+
 .cafetera-oferta,
 .macbook-oferta,
 .celular-oferta,
@@ -121,7 +134,6 @@ nav p {
 .titulo-ofertas {
     border: 15px solid #ebebeb;
     }
-
 
 .titulo-ofertas {
     background-color:  #ebebeb;
@@ -150,21 +162,31 @@ footer p {
     display: none;
 }
 
-@media (min-width: 480px){
+.fa-credit-card,
+.fa-gift,
+.fa-user-shield {
+    color: #03264C;
+    font-size: 22px;
+    margin-top: 15px;
+}
 
+@media (min-width: 500px){
+
+    .banner{
+        background-color: #ebebeb
+    }
 
     .top-header {
     flex-wrap: nowrap;
-    justify-content: space-between;
     align-items: center;
     }
 
     .first-line{
-        margin: 0% 10px;
+        margin: 0 0 0 10px;
     }
 
     .header-right{
-        font-size: 17px;
+        font-size: 16.5px;
     }
 
     .cafetera-oferta,
@@ -172,26 +194,36 @@ footer p {
     .celular-oferta,
     .tv-oferta,
     .titulo-ofertas {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         border: none;
         padding: 15px 0;
-        margin: 10px 0;
         }
-    
-    .descripcion{
+
+    .cafetera-oferta img,
+    .macbook-oferta img,
+    .celular-oferta img,
+    .tv-oferta img,
+    .titulo-ofertas img {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        padding: 0
+    }
+
+    .descripcion,
+    .precios{
         display: block;
         text-align: center;
+        font-style: none;
+        margin-right: 10px;
+    }
+
+    .camiones-venta{
+        font-size: 15px;
+        text-align: center;
+        margin-left: 185px;
+        margin-top: 2px;
     }
 
     .ocultando1 {
         display: block;
-    }
-
-    
-
-    .precios {
-        text-align: center;
-        font-style: none;
     }
 
     .ultima-visita span,
@@ -201,13 +233,16 @@ footer p {
      
 }
 
-@media (min-width: 768px){
-    
-    .top-header{
-       justify-content: center;
-       justify-items: center;
+@media (min-width: 770px){
+        
+    .main-header{
+        padding: 25px 15px 35px 15px;
     }
-    
+    .top-header {
+        align-items: center;
+        justify-content: space-between;
+    }
+
    .header-right{
         display: flex;
         max-width: 350px;
@@ -220,8 +255,33 @@ footer p {
        width: 320px;
     }
 
+    .img-banner{
+        max-height: 130px;
+    }
+
     .ocultando2 {
-        display: block;
+        display: flex;
+    }
+
+    .ofertas123{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #ebebeb;
+    }
+
+    .ofertas123 nav {
+        margin-left: 70px;
+        margin-right: 35px;
+        margin-top: 7px;
+    }
+
+    .cafetera-oferta img,
+    .macbook-oferta img,
+    .celular-oferta img,
+    .tv-oferta img,
+    .titulo-ofertas img {
+        margin: 15px;
     }
 
     .barranavegar {
@@ -248,17 +308,59 @@ footer p {
         display: none;
     }
 
-}
-
-/*
-@media (min-width: 992px){
-
-    section img {
-        max-width: 250px;
-        max-height: 255px;
+    .fa-credit-card,
+    .fa-gift,
+    .fa-user-shield {
+    color: #03264C;
+    font-size: 28px;
+    margin-top: 15px;
     }
+
+    footer h4 {
+        font-size: 23px;
+    }
+
+    footer p{
+        font-size: 18px;
+    }       
+    
+    .cafetera-oferta,
+    .macbook-oferta,
+    .celular-oferta,
+    .tv-oferta{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .cafetera-oferta img,
+    .macbook-oferta img,
+    .celular-oferta img,
+    .tv-oferta img {
+        box-shadow: none;
+    }
+
+
 }
-*/
+
+
+@media (min-width: 960px){
+
+    .barra-busqueda{
+        text-align: end;
+    }
+
+    .header-right{
+        max-width: 600px;
+        font-size: 20px;
+        margin: 0%;
+    }
+
+    .titulo-ofertas{
+        letter-spacing: 1.5px;
+        font-size: 28px;
+    }
+
+}
+
 
 @media (min-width: 1200px){
 
@@ -267,18 +369,8 @@ footer p {
         margin: auto;
     }
 
-    .top-header {
-        align-items: center;
-    }
-
     .logo {
         width: 240px;
-    }
-   
-    .header-right{
-        max-width: 600px;
-        font-size: 21px;
-        margin: 0%;
     }
 
     .barranavegar {
@@ -293,8 +385,28 @@ footer p {
        font-size: 18px;
     }
 
+    .img-banner {
+        min-height: 180px;
+    }
+
+    .cafetera-oferta{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .cafetera-oferta img  {
+        box-shadow: none;
+    }
+
     section img {
         max-width: 250px;
         max-height: 255px;
+    }
+
+    .ofertas123 {
+        flex-wrap: nowrap;
+    }
+
+    .ofertas123 nav{
+        margin: 0;
     }
 }
