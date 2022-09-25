@@ -17,7 +17,7 @@
     <header class="main-header">
         <div class="top-header">
         <div class="first-line">
-            <img src="/images/logo-mercado-liebre.svg" class="logo">
+            <a href="/"><img src="/images/logo-mercado-liebre.svg" class="logo"></a>
             <form class="barra-busqueda" action="/" method="get">
                 <label></label>
                 <input type="text" class="buscador" id="busqueda" name="busqueda" placeholder="Buscar productos, marcas"> <i class="fa-solid fa-magnifying-glass"></i> </input>
@@ -47,10 +47,84 @@
         </nav>
     </header>
 
-    <main>
+    <main class="main-registro">
 
         <form action="" method="post">
-            ESTO ES FORMULARIO
+
+            <div class="apellido-registro">
+                <input type="text" class="input-registro" name="nombreYApellido" placeholder="Nombre y apellido">
+            </div>
+
+            <div class="usuario-registro">
+                <input type="text" class="input-registro" name="nombreUsuario" placeholder="Nombre de usuario">
+            </div>
+
+            <div class="email-registro">
+                <input type="email" class="input-registro" name="email" placeholder="E-mail">
+            </div>
+
+            <div class="nacimiento-registro">
+                <label class="label">Fecha de nacimiento</label>
+                <input type="date" class="input-registro" name="nacimiento" placeholder="MM/DD/YYYY">
+            </div>
+
+            <div class="domicilio-registro">
+                <input type="text" class="input-registro" name="domicilio" placeholder="Domicilio">
+            </div>
+
+            <section class="contenedor-radio">
+                <label class="label">Perfil del usuario</label>
+                <div class="radius-registro">
+                    <label class="perfil-usuario">Comprador</label>
+                    <input type="radio" class="radius" name="perfilUsuario" value="Comprador" checked>
+                </div>
+
+                <div class="radius-registro">
+                    <label class="perfil-usuario">Vendedor</label>
+                    <input type="radio" class="radius" name="perfilUsuario" value="Vendedor">
+                </div>
+            </section>
+
+            <section class="contenedor-checkbox">
+                <label class="label">Intereses</label>
+                <div class="checkbox-registro">
+                    <label class="intereses-usuario">Electro</label>
+                    <input type="checkbox" class="check" name="interesesUsuario" checked>
+                </div>
+
+                <div class="checkbox-registro">
+                    <label class="intereses-usuario">Moda</label>
+                    <input type="checkbox" class="check" name="interesesUsuario" >
+                </div>
+
+                <div class="checkbox-registro">
+                    <label class="intereses-usuario">Hogar</label>
+                    <input type="checkbox" class="check" name="interesesUsuario" >
+                </div>
+
+                <div class="checkbox-registro">
+                    <label class="intereses-usuario">Juguetes</label>
+                    <input type="checkbox" class="check" name="interesesUsuario" >
+                </div>
+
+                <div class="checkbox-registro">
+                    <label class="intereses-usuario">Vida sana</label>
+                    <input type="checkbox" class="check" name="interesesUsuario" >
+                </div>
+
+            </section>
+
+            <div class="contraseña-registro">
+                <input type="password" class="input-registro" name="contraseña" placeholder="Contraseña">
+            </div>
+
+            <div class="contraseña-registro">
+                <input type="password" class="input-registro" name="repetirContraseña" placeholder="Repetir contraseña">
+            </div>
+
+            <div class="boton-registro-contenerdor">
+                <button type="submit" class="boton-registro">Registrarme</button>
+            </div>
 
         </form>
 

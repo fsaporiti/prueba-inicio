@@ -8,7 +8,6 @@ body{
 }
 
 .main-header{
-    border: 2px red dashed;
     background-color: #EAC926;
     padding: 20px;
 }
@@ -28,8 +27,8 @@ body{
     align-items: center;
 }
 
-.logo {
-    width: 55%;
+a .logo {
+    width: 70%;
     max-width: 1000px;
 }
 
@@ -67,7 +66,6 @@ body{
 }
 
 .mainn {
-    border: 2px blue dotted;
     text-align: center;
 }
 
@@ -77,6 +75,11 @@ body{
     border-radius: 50%;
     font-size: 17px;
     padding: 3px;
+    transition: transform 750ms;
+}
+
+.camiones-venta i:hover{
+    transform: rotate(90deg);
 }
 
 h3 {
@@ -84,10 +87,6 @@ h3 {
 }
 
 .ofertas123{
-    background-color: #ebebeb;
-}
-
-.main-login{
     background-color: #ebebeb;
 }
 
@@ -126,6 +125,10 @@ nav p {
     text-align: left;
 }
 
+.banner,
+.marca-registrada{
+    background-color: #ebebeb
+}
 
 .img-banner {
     width: 100%;
@@ -145,7 +148,6 @@ nav p {
    }
 
 footer {
-    border: 2px violet dashed;
     padding: 10px;
     text-align: center;     
 }
@@ -169,15 +171,82 @@ footer p {
 .fa-credit-card,
 .fa-gift,
 .fa-user-shield {
-    color: #03264C;
+    color: #1259c3;
     font-size: 22px;
     margin-top: 15px;
+    transition: transform 850ms;
+}
+
+.fa-credit-card:hover,
+.fa-gift:hover,
+.fa-user-shield:hover{
+    color: #0022AA;
+}
+
+.main-login,
+.main-registro,
+footer{
+    background-color:  #ebebeb;
+    text-align: center;
+}
+
+.camiones-venta{
+    margin-top: 3px;
+    margin-left: 66%;
+}
+
+.usuario-login, .contraseña-login, .apellido-registro, .usuario-registro, .email-registro, .nacimiento-registro,
+.domicilio-registro, .contenedor-radio, .contenedor-checkbox, .contraseña-registro, .boton-registro-contenerdor{
+    padding-top: 35px;
+}
+
+.contraseña-login, .boton-login-padre, .boton-registro-contenerdor {
+    padding-bottom: 40px;
+}
+
+.input-login, .input-registro{
+    border: none;
+}
+
+.input-login, .boton-login, .input-registro, .boton-registro{
+    width: 85%;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.boton-login, .boton-registro{
+    background-color: #1259c3;
+    color: white;
+    font-weight: bold;
+    
+}
+
+.boton-login-padre button{
+    transition: transform 850ms;
+}
+
+.boton-login-padre button:hover{
+    background-color: #0022AA;
+}
+
+.label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.marca-registrada{
+    margin: 0%;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
 }
 
 @media (min-width: 500px){
 
-    .banner{
-        background-color: #ebebeb
+    a .logo {
+        width: 85%;
     }
 
     .top-header {
@@ -234,6 +303,27 @@ footer p {
     .ofertas123 span {
         color: #39b54a;
     }
+
+    .input-login, .boton-login, .input-registro, .boton-registro{
+        max-width: 600px;
+        border-radius: 6px;
+        padding: 10px;
+    }
+
+    .contenedor-checkbox, .contenedor-radio{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .perfil-usuario, .intereses-usuario{
+        margin-left: 6px;
+        margin-top: 5px;
+        font-size: 17px
+    }
+
+    .label{
+        margin-right: 10px;
+    }
      
 }
 
@@ -278,6 +368,7 @@ footer p {
         margin-left: 70px;
         margin-right: 35px;
         margin-top: 7px;
+        border-radius: 7px;
     }
 
     .cafetera-oferta img,
@@ -315,17 +406,16 @@ footer p {
     .fa-credit-card,
     .fa-gift,
     .fa-user-shield {
-    color: #03264C;
     font-size: 28px;
     margin-top: 15px;
     }
 
     footer h4 {
-        font-size: 23px;
+        font-size: 20px;
     }
 
     footer p{
-        font-size: 18px;
+        font-size: 17px;
     }       
     
     .cafetera-oferta,
@@ -342,9 +432,24 @@ footer p {
         box-shadow: none;
     }
 
+    .usuario-login,
+    .contraseña-login{
+        padding-top: 55px;
+    }
+
+    .contraseña-login,
+    .boton-login-padre{
+        padding-bottom: 55px;
+    }
+
+    .marca-registrada{
+        padding: 25px;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
 
 }
-
 
 @media (min-width: 960px){
 
@@ -361,6 +466,27 @@ footer p {
     .titulo-ofertas{
         letter-spacing: 1.5px;
         font-size: 28px;
+    }
+
+    footer{
+        display: flex;
+    }
+
+    footer div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fa-credit-card,
+    .fa-gift,
+    .fa-user-shield {
+    font-size: 34px;
+    }
+
+    .marca-registrada{
+        padding: 35px;
+        font-size: 24px;
+        letter-spacing: 2px;
     }
 
 }
@@ -411,6 +537,6 @@ footer p {
     }
 
     .ofertas123 nav{
-        margin: 0;
+        margin: 8px;
     }
 }
