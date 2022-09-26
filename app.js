@@ -12,11 +12,11 @@ app.get("/", function(req,res){
     res.sendFile(path.resolve(__dirname, "./views/index.html"));
 })
 
-app.get("/Views/login.html", (req,res) => {
+app.get("/views/login.html", (req,res) => {
     res.sendFile(path.resolve (__dirname, "./Views/login.html"))
 })
 
-app.get("/Views/register.html", (req,res) => {
+app.get("/views/register.html", (req,res) => {
     res.sendFile(path.resolve (__dirname, "./Views/register.html"))
 })
 
